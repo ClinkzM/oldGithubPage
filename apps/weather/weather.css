@@ -1,0 +1,22 @@
+.weather-display {
+    display: inline-block;
+}
+.weather-box {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgba(229,124,0,1);
+    background: rgba(0,0,0,0.7);
+}
+.content-box {
+    margin: 10px 0;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.45);
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+}

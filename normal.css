@@ -8,18 +8,22 @@ body {
 
 .menu-item {
     float: left;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
 }
-
 .menu-item a {
-    color: rgba(0,0,0,1);
+    color: rgb(229, 124, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-.menu-item a:hover {
-    color: rgba(255,255,255,0.8);
+.menu-item a:visited {
+    color: rgba(229, 124, 0);
 }
+.menu-item a:hover {
+    color: rgb(239, 179, 203);
+}
+
 .fengxing-vertical-center {
     position: absolute;
     top: 50%;

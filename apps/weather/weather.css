@@ -15,7 +15,7 @@
     background: rgba(255,255,255,0.45);
     text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 436px) {
     body {
         margin: 0;
     }

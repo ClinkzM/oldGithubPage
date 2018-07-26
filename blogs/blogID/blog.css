@@ -1,13 +1,15 @@
 body {
     font-size: 16px;
-    background-color: rgb(249, 250, 245);
+    background: rgb(249, 250, 245);
     color: rgb(34, 59, 80);
 }
-
+.blog-container {
+    width: 100%;
+}
 .fengxing-blog {
     width: 70%;
     min-width: 320px;
-    margin: 0 auto;
+    margin: 10px auto 50px;
 }
 .fengxing-blog a {
     position: relative;
@@ -25,4 +27,15 @@ body {
 
 .blog-author {
     font-size: 0.7em;
+}
+.CodeMirror {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 436px) {
+    .fengxing-blog {
+        width: 100%;
+        margin: 10px 0 50px;
+    }
 }

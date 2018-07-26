@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(249, 249, 245);
+    font-size: 62.5%;
+}
+.fengxing-vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fengxing-horizontal-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fengxing-float-left {
+    float: left;
+}
+.fengxing-clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.iconfont {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

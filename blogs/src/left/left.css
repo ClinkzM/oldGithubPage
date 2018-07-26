@@ -1,0 +1,15 @@
+.Left {
+    position: fixed;
+    width: 250px;
+    /* float: left; */
+    left: 0;
+    font-size: 28px;
+    text-align: center;
+    overflow: hidden;
+}
+@media screen and (max-width: 436px) {
+    .Left {
+        position: relative;
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,12 @@
+.author-wrapper {
+    margin: 20px 0;
+}
+.author-wrapper div {
+    margin: 5px 0;
+}
+.portrait {
+    width: 50px;
+}
+.author-sign {
+    font-size: 0.45em;
+}

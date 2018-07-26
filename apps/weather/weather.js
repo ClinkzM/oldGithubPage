@@ -85,6 +85,8 @@ var cleanData = (data) => {
     return obj
 }
 
+
+
 var insertWeather = (id, date, day, icoDay, night, icoNight) => {
     var html = `
         <div data-id="${id}" class="weather-box">

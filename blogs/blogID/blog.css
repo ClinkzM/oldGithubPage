@@ -1,0 +1,28 @@
+body {
+    font-size: 16px;
+    background-color: rgb(249, 250, 245);
+    color: rgb(34, 59, 80);
+}
+
+.fengxing-blog {
+    width: 70%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.fengxing-blog a {
+    position: relative;
+    color: rgba(229, 124, 0, 0.9);
+    text-decoration: none;
+}
+.fengxing-blog a:hover {
+    position: relative;
+    color: rgba(239, 179, 203, 0.9);
+}
+.fengxing-blog a:visited {
+    position: relative;
+    color: rgba(229, 124, 0, 0.9);
+}
+
+.blog-author {
+    font-size: 0.7em;
+}

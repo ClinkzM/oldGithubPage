@@ -1,0 +1,32 @@
+Arguments: 
+  F:\Program Files (x86)\nodejs\node.exe F:\Program Files (x86)\yarn\bin\yarn.js start
+
+PATH: 
+  C:\Users\sun\bin;F:\Program Files\Git\mingw64\bin;F:\Program Files\Git\usr\local\bin;F:\Program Files\Git\usr\bin;F:\Program Files\Git\usr\bin;F:\Program Files\Git\mingw64\bin;F:\Program Files\Git\usr\bin;C:\Users\sun\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\Program Files\Calibre2;F:\Program Files (x86)\yarn\bin;F:\Program Files (x86)\nodejs;F:\Program Files\Git\cmd;F:\Users\sun\AppData\Local\Programs\Python\Python36-32\Scripts;F:\Users\sun\AppData\Local\Programs\Python\Python36-32;C:\Users\sun\AppData\Local\atom\bin;C:\Users\sun\AppData\Local\Yarn\bin;C:\Users\sun\AppData\Roaming\npm;F:\Program Files\Git\usr\bin\vendor_perl;F:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.10.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "E:\\业精于勤荒于嬉\\IT\\github\\ClinkzM.github.io"
+      at new MessageError (F:\Program Files (x86)\yarn\lib\cli.js:186:110)
+      at F:\Program Files (x86)\yarn\lib\cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (F:\Program Files (x86)\yarn\lib\cli.js:98:30)
+      at F:\Program Files (x86)\yarn\lib\cli.js:109:13
+      at <anonymous>

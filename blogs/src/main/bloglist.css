@@ -1,0 +1,32 @@
+.fengxing-blogs {
+    display: block;
+    font-size: 16px;
+    word-break: keep-all;
+}
+.fengxing-blogs a {
+    position: relative;
+    color: rgba(229, 124, 0, 0.9);
+    text-decoration: none;
+}
+.fengxing-blogs a:hover {
+    position: relative;
+    color: rgba(239, 179, 203, 0.9);
+}
+.fengxing-blogs a:visited {
+    position: relative;
+    color: rgba(229, 124, 0, 0.9);
+}
+
+.blog-cell {
+    margin: 10px 0;
+}
+.blog-author {
+    color: rgb(249, 245, 245);
+    font-size: 0.8em;
+}
+.blog-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 15px 0;
+}

@@ -1,0 +1,12 @@
+.MarkdownEditor {
+    text-align: left;
+    margin: 10px 0 10px 250px;
+    border: 1px solid white;
+}
+@media screen and (max-width: 436px) {
+    .MarkdownEditor {
+        text-align: left;
+        margin: 35px 0;
+        border: 1px solid white;
+    }
+}

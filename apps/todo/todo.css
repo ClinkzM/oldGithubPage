@@ -38,7 +38,7 @@ LEVEL 1. RESET STYLES
 */
 
 .field {
-    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, rgb(118,118,118));
 }
 
 .field-input {

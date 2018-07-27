@@ -1,6 +1,23 @@
 import React, { Component } from 'react'
 import './nav.css'
 
+const MenuList = (props) => {
+    return(
+        <nav id="menu" className="menu-box">
+            <div className="menu-list">
+                {props.menus.map((t, i) => (
+                    <div className="menu-cell" key={i}>
+                        <a href={t.link}>
+                            <svg className="iconfont" aria-hidden="true">
+                                <use xlinkHref={`#icon-${t.icon}`}></use>
+                            </svg>
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </nav>
+    )
+}
 
 class Nav extends Component {
     constructor(props) {
@@ -38,26 +55,6 @@ class Nav extends Component {
                     <MenuList menus={this.state.menus} />
                 </div>
             </div>
-        )
-    }
-}
-
-class MenuList extends Component {
-    render() {
-        return(
-            <nav id="menu" className="menu-box">
-                <div className="menu-list">
-                    {this.props.menus.map((t, i) => (
-                        <div className="menu-cell" key={i}>
-                            <a href={t.link}>
-                                <svg className="iconfont" aria-hidden="true">
-                                    <use xlinkHref={`#icon-${t.icon}`}></use>
-                                </svg>
-                            </a>
-                        </div>
-                    ))}
-                </div>
-            </nav>
         )
     }
 }

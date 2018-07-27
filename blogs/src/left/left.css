@@ -1,7 +1,6 @@
 .Left {
     position: fixed;
     width: 250px;
-    /* float: left; */
     left: 0;
     font-size: 28px;
     text-align: center;

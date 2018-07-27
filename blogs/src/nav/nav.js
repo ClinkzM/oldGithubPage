@@ -16,9 +16,6 @@ class Nav extends Component {
                 icon: 'app',
                 link: '/apps/apps.html',
             }, {
-                icon: 'archive',
-                link: '/blogs/timeline/timeline.html',
-            }, {
                 icon: 'github',
                 link: 'https://github.com/ClinkzM/ClinkzM.github.io',
             }]

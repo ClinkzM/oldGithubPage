@@ -78,23 +78,6 @@ var bindClickIndicator = () => {
     })
 }
 
-// var count = () => {
-//     var i = 4
-//     return () => {
-//         if (i < 4) {
-//             i++
-//         } else {
-//             i = 0
-//         }
-//         return i
-//     }
-// }
-
-// var switchImage = (i) => {
-//     var element = e('body')
-//     element.style.backgroundImage = `url(/pics/bg${i}.webp)`
-// }
-
 var playNextImage = () => {
     var slide = e('.fengxing-slide')
     // 求出下一张图片的 index
@@ -105,13 +88,10 @@ var playNextImage = () => {
 
 var autoPlay = () => {
     var interval = 3500
-    // var index = count()
     setInterval(() => {
         // 每 3.5s 都会调用这个函数
-        // switchImage(index())
         playNextImage()
     }, interval)
-    // switchImage(index())
 }
 
 var __main = () => {

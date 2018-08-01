@@ -46,6 +46,8 @@ class Content extends Component {
                     link: "阅读全文",
                 }
                 blogs.push(blog)
+            } else {
+                continue
             }
         }
         return blogs

@@ -38,7 +38,7 @@ LEVEL 1. RESET STYLES
 */
 
 .field {
-    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, rgb(118,118,118));
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, rgb(118, 118, 118));
 }
 
 .field-input {
@@ -53,17 +53,8 @@ LEVEL 1. RESET STYLES
     font-size: 1em;
 }
 
-.a-field .field-input:focus {
+.fengxing-field .field-input:focus {
     outline: none;
-}
-
-.field-input:focus::-webkit-input-placeholder {
-    color: var(--uiFieldPlaceholderColor);
-}
-
-.field-input:focus::-moz-placeholder {
-    color: var(--uiFieldPlaceholderColor);
-    opacity: 1;
 }
 
 /*
@@ -88,9 +79,9 @@ LEVEL 3. PRESENTATION STYLES
 =====
 */
 
-/* a-field */
+/* fengxing-field */
 
-.a-field {
+.fengxing-field {
     --uiFieldHeight: var(--fieldHeight, 40px);
     --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
     --uiFieldBorderColor: var(--fieldBorderColor);
@@ -110,39 +101,29 @@ LEVEL 3. PRESENTATION STYLES
     padding-top: 1em;
 }
 
-.a-field .field-input  {
+.fengxing-field .field-input  {
     height: var(--uiFieldHeight);
     padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
     border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);
     color: var(--uiFieldFontColor);
 }
 
-.a-field .field-input::-webkit-input-placeholder {
+.fengxing-field .field-input::placeholder {
     opacity: 0;
     transition: opacity .2s ease-out;
 }
 
-.a-field .field-input::-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease-out;
-}
-
-.a-field .field-input:not(:placeholder-shown) ~ .field-label-wrap .field-label {
+.fengxing-field .field-input:not(:placeholder-shown) ~ .field-label-wrap .field-label {
     opacity: 0;
     bottom: var(--uiFieldPaddingBottom);
 }
 
-.a-field .field-input:focus::-webkit-input-placeholder {
+.fengxing-field .field-input:focus::placeholder {
     opacity: 1;
     transition-delay: .2s;
 }
 
-.a-field .field-input:focus::-moz-placeholder {
-    opacity: 1;
-    transition-delay: .2s;
-}
-
-.a-field .field-label-wrap {
+.fengxing-field .field-label-wrap {
     box-sizing: border-box;
     width: 100%;
     height: var(--uiFieldHeight);
@@ -155,7 +136,7 @@ LEVEL 3. PRESENTATION STYLES
     left: 0;
 }
 
-.a-field .field-label {
+.fengxing-field .field-label {
     position: absolute;
     left: var(--uiFieldPaddingLeft);
     bottom: calc(50% - .5em);
@@ -168,18 +149,18 @@ LEVEL 3. PRESENTATION STYLES
     will-change: bottom, opacity;
 }
 
-.a-field .field-input:focus ~ .field-label-wrap .field-label {
+.fengxing-field .field-input:focus ~ .field-label-wrap .field-label {
     opacity: 1;
     bottom: var(--uiFieldHeight);
 }
 
-/* a-field-a3 */
+/* fengxing-field-a3 */
 
-.a-field-a3 {
+.fengxing-field-a3 {
     padding-top: 1.5em;
 }
 
-.a-field-a3 .field-label-wrap:after {
+.fengxing-field-a3 .field-label-wrap:after {
     content: "";
     box-sizing: border-box;
     width: 100%;
@@ -196,12 +177,12 @@ LEVEL 3. PRESENTATION STYLES
     transition: height .2s ease-out, opacity .2s ease-out;
 }
 
-.a-field-a3 .field-input:focus ~ .field-label-wrap:after {
+.fengxing-field-a3 .field-input:focus ~ .field-label-wrap:after {
     height: 100%;
     opacity: 1;
 }
 
-.a-field-a3 .field-input:focus ~ .field-label-wrap .field-label {
+.fengxing-field-a3 .field-input:focus ~ .field-label-wrap .field-label {
     bottom: calc(var(--uiFieldHeight) + .5em);
 }
 
@@ -233,7 +214,7 @@ LEVEL 4. SETTINGS
     border: none;
 }
 .todo-add:hover {
-    animation: borderAnim 3s infinite;
+    animation: borderAnim 1s infinite;
 }
 .todo-list {
     margin: 10px 0;

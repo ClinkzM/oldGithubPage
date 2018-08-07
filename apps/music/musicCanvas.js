@@ -10,7 +10,7 @@ var audioVisualized = function() {
         var canvasCtx = canvas.getContext('2d')
         var cwidth = canvas.width
         var cheight = canvas.height
-        var array = new Uint8Array(128)
+        var array = new Uint8Array(analyser.frequencyBinCount)
         analyser.getByteFrequencyData(array)
         canvasCtx.clearRect(0, 0, cwidth, cheight)
         for (var i = 0; i < array.length; i++) {

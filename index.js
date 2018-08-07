@@ -58,12 +58,24 @@ var showImageAtIndex = (slide, index) => {
 
 var bindEventIndicator = () => {
     var selector = '.fengxing-slide-indi'
+    var interval = 3500
+    var intervalId = setInterval(() => {
+        // 每 3.5s 都会调用显示下一张图片的函数
+        playNextImage()
+    }, interval)
     bindAll(selector, 'mouseover', (event) => {
+        clearInterval(intervalId)
         var self = event.target
         var index = Number(self.dataset.index)
         // 直接播放第 n 张图片
         var slide = self.closest('.fengxing-slide')
         showImageAtIndex(slide, index)
+    })
+    bindAll(selector, 'mouseout', (event) => {
+        // 鼠标离开小圆点重新自动轮播
+        intervalId = setInterval(() => {
+            playNextImage()
+        }, interval)
     })
 }
 
@@ -86,20 +98,11 @@ var playNextImage = () => {
     showImageAtIndex(slide, index)
 }
 
-var autoPlay = () => {
-    var interval = 3500
-    setInterval(() => {
-        // 每 3.5s 都会调用这个函数
-        playNextImage()
-    }, interval)
-}
-
 var __main = () => {
     height()
     slideHeight()
     slideWidth()
     bindEventSlide()
     bindEventIndicator()
-    autoPlay()
 }
 __main()

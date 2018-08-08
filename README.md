@@ -1,2 +1,2 @@
 # ClinkzM.github.io
-这是一个项目展示仓库
+用于项目展示

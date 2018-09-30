@@ -1,2 +1,2 @@
 # ClinkzM.github.io
-githubPage
+用于项目展示

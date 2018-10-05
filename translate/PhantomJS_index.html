@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>PhantomJS - 可编程的无界面浏览器</title>
+        <style media="screen">
+        body {
+             color: #444;
+             font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         }
+         h1, h2, h3, h4 {
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         }
+        code, pre {
+            font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
+        }
+        pre {
+            margin-left: 40px;
+        }
+        code {
+            border: 1px solid #ccc;
+            padding: 2px 4px;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>PhantomJS - 可编程的无界面浏览器（<a href="http://phantomjs.org/">官网在此</a>）</h1>
+
+        <p>
+            <strong>重要通知</strong>: 除非另行通知，PhantomJS 项目已经<em>搁置</em>。
+             (<a href="https://github.com/ariya/phantomjs/issues/15344">详情</a>)
+        </p>
+
+        <p>PhantomJS 是一个可用 JavaScript 来编译的无界面网络浏览器。能在 Windows、macOS、Linux 和 FreeBSD 系统上运行。</p>
+
+        <p>使用 QtWebKit 渲染引擎（译注：QtWebKit 是一个用 Qt 封装了 Webkit 浏览器引擎的工具包），为各种不同的网络标准提供快速本地化的支持，比如处理 DOM 树、CSS选择器、JSON、Canvas 以及 SVG。</p>
+
+        <p>在 PhantomJS 通过以下一段简单的代码加载谷歌的主页，稍等一会，就能将主页生成图片。</p>
+
+        <pre>
+            var page = require('webpage').create();
+            page.open('http://www.google.com', function() {
+                setTimeout(function() {
+                    page.render('google.png');
+                    phantom.exit();
+                }, 200);
+            });
+        </pre>
+
+        <p>PhantomJS 是以下的最佳实践：</p>
+
+        <dt>
+            <a href="/page-automation.html">页面自动化</a>
+            <dd>使用标准DOM API或者常见库，比如jQuery，来访问网页并提取信息。</dd>
+
+        </dt>
+
+        <dt>
+            <a href="/screen-capture.html">屏幕获取</a>
+            <dd>程序抓取网络内容，包括 SVG 和 Canvas。带缩略图预览的网页页面截图。</dd>
+        </dt>
+
+        <dt>
+            <a href="/headless-testing.html">无界面网页测试</a>
+            <dd>使用框架进行功能测试，比如 Jasmine、QUnit、Mocha、WebDriver等等.</dd>
+        </dt>
+
+        <dt>
+            <a href="/network-monitoring.html">网络资源监控</a>
+            <dd> 监控页面加载和导出的标准HAR文件。使用YSlow和Jenkins自动执行性能分析。</dd>
+        </dt>
+
+        <p>准备开始玩 PhantomJS 了吗？ <a href="/download.html">安装</a> 并且跟随<a href="/quick-start.html">快速开始</a>的指引吧~</p>
+
+        <p>想了解更多？请看<a href="/faq">常见问题</a>，
+        学习<a href="/examples">更多实例</a>，还有了解下完整的<a href="/api">API 文档</a>吧~</p>
+
+        <p>想看源码、问题追踪以及其他开发信息，请访问
+            <a href="https://github.com/ariya/phantomjs">github.com/ariya/phantomjs</a>。
+        </p>
+
+        <hr>
+
+        <footer>
+        <p>
+            <small>&copy; 2010-2018
+                <a href="https://github.com/ariya/phantomjs/graphs/contributors">PhantomJS 贡献者们</a>.
+                发布基于 BSD license 开源协议
+                (SPDX: <a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a>).
+            </small>
+        </p>
+        </footer>
+    </body>
+</html>

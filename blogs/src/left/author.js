@@ -9,7 +9,7 @@ class Author extends Component {
         super(props)
         this.state = {
             portraitURL: Portrait,
-            name: '风行',
+            name: 'Clinkz',
             sign: '与其感慨路难行，不如马上出发',
         }
     }

@@ -16,7 +16,7 @@ class BlogList extends Component {
                         <div className="blog-content">
                             {blog.content}
                         </div>
-                        <a href={'/blogs/blogID/'+blog.dataID+'.html'} data-id={blog.dataID}>
+                        <a href={'/oldGithubPage/blogs/blogID/'+blog.dataID+'.html'} data-id={blog.dataID}>
                             {blog.link}
                         </a>
                     </div>

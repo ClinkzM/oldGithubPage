@@ -14,9 +14,9 @@ const Time = (props) => {
 
 class Clock extends Component {
     fetchData() {
-        var hour = new Date(Date.now()).getHours()
-        var minute = new Date(Date.now()).getMinutes()
-        var second = new Date(Date.now()).getSeconds()
+        const hour = new Date(Date.now()).getHours()
+        const minute = new Date(Date.now()).getMinutes()
+        const second = new Date(Date.now()).getSeconds()
 
         this.setState({
             hour: hour,
@@ -51,10 +51,10 @@ class Clock extends Component {
 
 
     render() {
-        var {hour, minute, second} = this.state
-        var hourHeight = hour / 24 * 100
-        var minuteHeight =  minute / 60 * 100
-        var secondHeight =  second / 60 * 100
+        const {hour, minute, second} = this.state
+        const hourHeight = hour / 24 * 100
+        const minuteHeight =  minute / 60 * 100
+        const secondHeight =  second / 60 * 100
 
         return (
             <div className="clock-box">

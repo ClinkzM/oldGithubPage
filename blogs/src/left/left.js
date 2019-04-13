@@ -29,7 +29,7 @@ class Left extends Component {
     }
 
     resize() {
-        var wrapper = document.querySelector('.Left')
+        const wrapper = document.querySelector('.Left')
         if (window.innerWidth <= 436) {
             wrapper.style.marginTop = '20px'
         } else {

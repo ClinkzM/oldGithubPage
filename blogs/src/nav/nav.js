@@ -25,13 +25,13 @@ class Nav extends Component {
         this.state = {
             menus: [{
                 icon: 'home',
-                link: '/',
+                link: '/oldGithubPage/',
             }, {
                 icon: 'blog',
-                link: '/blogs/build/index.html',
+                link: '/oldGithubPage/blogs/build/index.html',
             }, {
                 icon: 'app',
-                link: '/apps/apps.html',
+                link: '/oldGithubPage/apps/apps.html',
             }, {
                 icon: 'github',
                 link: 'https://github.com/ClinkzM/ClinkzM.github.io',
@@ -39,7 +39,7 @@ class Nav extends Component {
         }
     }
     handleToggleBar = (e) => {
-        var bars = document.querySelector("#nav-action")
+        const bars = document.querySelector("#nav-action")
         var menu = document.querySelector("#menu")
         bars.classList.toggle('active')
         menu.classList.toggle('show')

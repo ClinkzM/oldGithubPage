@@ -1,1 +1,3 @@
 .idea/*
+/blogs/.idea/*
+/blogs/node_modules/*

@@ -1,2 +1,2 @@
-# ClinkzM.github.io
-用于项目展示
+#存档
+自学期间的 github page

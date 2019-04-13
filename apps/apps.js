@@ -4,7 +4,7 @@ var height = () => {
 }
 var templateApp = (appCn, appEn) => {
     var t = `
-        <div class="link-text fengxing-float-left"><a href="/apps/${appEn}/${appEn}.html">${appCn}<br/>${appEn}</a></div>
+        <div class="link-text fengxing-float-left"><a href="/oldGithubPage/apps/${appEn}/${appEn}.html">${appCn}<br/>${appEn}</a></div>
     `
     return t
 }

@@ -24,7 +24,7 @@ var cleanData = (data, dataID) => {
             var blog = {
                 id: Number(data[i].id),
                 title: data[i].title,
-                author: "风行",
+                author: "Clinkz",
                 time: new Date(data[i].created_at).toLocaleString(),
                 updateTime: new Date(data[i].updated_at).toLocaleString(),
                 content: data[i].body,
